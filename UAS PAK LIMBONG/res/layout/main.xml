@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Konek_DBActivity" >
+    
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_launcher" />
+        
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="10dp"
+        android:text="STMIK KAPUTAMA BINJAI"
+        android:textColor="#00ff00"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonTambahMataKuliah"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView1"
+    	android:drawableLeft="@drawable/ic_launcher2"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Tambah MataKuliah" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/verticalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/tableMataKuliah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp" >
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>
